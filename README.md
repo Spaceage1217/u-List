@@ -148,15 +148,15 @@ A `GET` request to the API/listings should be made. <br/>
 ##### Query Parameters:
 
 **Filter by tag:**
-`?tag=1428`
+`?tag=1428`<br/>
 **Filter by owner:**
-`?owner=vince`
+`?owner=vince`<br/>
 **Favorited by user:**
-`?favorited=sherm`
+`?favorited=sherm`<br/>
 **Limit number of listings** 
-`?limit=15`
+`?limit=15`<br/>
 **Max-price**
-`?maxPrice=150.00`
+`?maxPrice=150.00`<br/>
 >**Note:** (default for listings is 15 per page..still figuring out design might change):
 #### Get listing
 A `GET` request to the API/listings/:slug should be made.<br/>
