@@ -1,7 +1,7 @@
 # u-List
 u-List for the students by the students
 
-# API SPEC
+## API SPEC
 ### Users (to authenticate a user)
     {
       "user": {
@@ -140,11 +140,11 @@ Accepted fields that can be changed: `email`, `username`, `password`, `image`, `
 #### Get Profile
 A `GET` request to the API/profiles/:username should be made.<br/>
 Returns: A Profile<br/>
-**Authentication required:**None.<br/>
+**Authentication required:** None.<br/>
 ### Get Listings
 A `GET` request to the API/listings should be made. <br/>
 **Returns:** most recent listings globally be default, provide `tag`, `owner`, `favorited`,`department`,`category`, or `price range` query parameter to filter results<br/>
-**Authentication required**: None<br/>
+**Authentication required:** None.<br/>
 ##### Query Parameters:
 
 **Filter by tag:**
