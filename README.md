@@ -91,10 +91,10 @@ u-List for the students by the students
 _______________________________________
 #### login
  A `POST` request to the API/users/login should be made.<br/>
-**Returns:** A user.
-**Requires:** `email`, `password`
-**Authentication required:** None.
-
+**Returns:** A user.<br/>
+**Requires:** `email`, `password`<br/>
+**Authentication required:** None.<br/>
+###### Example request body:<br/>
     {
         "user":{
             "email": "vince@gmail.com",
@@ -103,11 +103,11 @@ _______________________________________
     }
 
 #### registration
-A `POST` request to the API/users should be made.
-**Returns**: A user.
-**Requires**: `email`, `username` `password`.
-**Authentication required**: None.
-###### Example request body:
+A `POST` request to the API/users should be made.<br/>
+**Returns**: A user.<br/>
+**Requires**: `email`, `username` `password`.<br/>
+**Authentication required**: None.<br/>
+###### Example request body:<br/>
     {
         "user":{
             "username": "Vicne",`
@@ -118,14 +118,14 @@ A `POST` request to the API/users should be made.
     }
 
 #### Get Current User
-A `GET` request to the API/user should be made.
-**Authentication required:** check to make sure user is still logged in.
-**Returns:** A User that's the current user.
+A `GET` request to the API/user should be made.<br/>
+**Authentication required:** check to make sure user is still logged in.<br/>
+**Returns:** A User that's the current user.<br/>
 #### Update User 
-A `PUT` request to the API/user should be made.
-**Authentication required:** Check to make sure user is still logged in.
-**Returns:** The User
-Accepted fields that can be changed: `email`, `username`, `password`, `image`, `bio`
+A `PUT` request to the API/user should be made.<br/>
+**Authentication required:** Check to make sure user is still logged in.<br/>
+**Returns:** The User.<br/>
+Accepted fields that can be changed: `email`, `username`, `password`, `image`, `bio`<br/>
 ###### Example request body:
 
     {
@@ -138,13 +138,13 @@ Accepted fields that can be changed: `email`, `username`, `password`, `image`, `
 
 
 #### Get Profile
-A `GET` request to the API/profiles/:username should be made.
-Returns: A Profile
-**Authentication required:none**
+A `GET` request to the API/profiles/:username should be made.<br/>
+Returns: A Profile<br/>
+**Authentication required:**None.<br/>
 ### Get Listings
-A `GET` request to the API/listings should be made. 
-**Returns:** most recent listings globally be default, provide `tag`, `owner`, `favorited`,`department`,`category`, or `price range` query parameter to filter results
-**Authentication required**: None
+A `GET` request to the API/listings should be made. <br/>
+**Returns:** most recent listings globally be default, provide `tag`, `owner`, `favorited`,`department`,`category`, or `price range` query parameter to filter results<br/>
+**Authentication required**: None<br/>
 ##### Query Parameters:
 
 **Filter by tag:**
@@ -159,16 +159,16 @@ A `GET` request to the API/listings should be made.
 `?maxPrice=150.00`
 >**Note:** (default for listings is 15 per page..still figuring out design might change):
 #### Get listing
-A `GET` request to the API/listings/:slug should be made.
-**Authentication required**: None.
-**Returns:** Single listing.
+A `GET` request to the API/listings/:slug should be made.<br/>
+**Authentication required**: None.<br/>
+**Returns:** Single listing.<br/>
 
 #### Create Listing
-A `Post` request to the API/listings should be made.
-**Authentication required**: yes needs to be logged in.
-**Returns:** A listing.
-**Required fields**: `title`, `description`,`price`,`category`,`department //might depend on the category`
-**Optional fields**: `tags` as an array of Strings
+A `Post` request to the API/listings should be made.<br/>
+**Authentication required**: yes needs to be logged in.<br/>
+**Returns:** A listing.<br/>
+**Required fields**: `title`, `description`,`price`,`category`,`department //might depend on the category`<br/>
+**Optional fields**: `tags` as an array of Strings.<br/>
 >**Note:** Might phase out the idea of sorting by department all together might not be usefull in the long run..
 
 ##### Example request body:
@@ -185,10 +185,10 @@ A `Post` request to the API/listings should be made.
     }
 
 #### Update Listing
-A `PUT` request to the API/listings/:slug should be made.
-**Authentication required**: yes needs to be logged in.
-**Returns:** A updated Listing.
-**Optional fields**: `title`, `description`, `price`,`department`,`category`
+A `PUT` request to the API/listings/:slug should be made.<br/>
+**Authentication required**: yes needs to be logged in.<br/>
+**Returns:** A updated Listing.<br/>
+**Optional fields**: `title`, `description`, `price`,`department`,`category`<br/>
 
 >**Note:** The slug also gets updated when the title is changed
 
@@ -201,7 +201,7 @@ A `PUT` request to the API/listings/:slug should be made.
 
 #### Delete Listing
 A `DELETE` request to the API/listings/:slug should be made.
-**Authentication required**: yes needs to be logged in.
+**Authentication required**: Yes user needs to be logged in.<br/>
 
 
 
