@@ -14,79 +14,79 @@ u-List for the students by the students
     }
 ### Profile of a user
 
-`{`
-&nbsp; &nbsp; ` "profile": {`
-&nbsp; &nbsp;&nbsp; &nbsp;   `"username": "Vince",`
-&nbsp; &nbsp;&nbsp; &nbsp;    `"bio": "CS student",`
-&nbsp; &nbsp; &nbsp; &nbsp;   `"image": "some/path",`
-&nbsp; &nbsp; &nbsp; &nbsp;   `"following": false`
-&nbsp; &nbsp;  `}`
-`}`
+    {
+        "profile": {
+            "username": "Vince",
+            "bio": "CS student",
+            "image": "some/path",
+            "following": false
+        }
+    }
 ### Listing
 
-`{`
-&nbsp; &nbsp; ` "listing": {`
-&nbsp; &nbsp;&nbsp; &nbsp;   ` "slug": "cs-1428-book-#123",`
-&nbsp; &nbsp;&nbsp; &nbsp;    `"title": CS 1428 book",`
-&nbsp; &nbsp;&nbsp; &nbsp;  `  "description": "1428 text book 5th edition",`
-&nbsp; &nbsp;&nbsp; &nbsp;  `  "category": "Books",`
-&nbsp; &nbsp;&nbsp; &nbsp;  `  "Department?": "CS",//departments might be optional depending on the category.`
-&nbsp; &nbsp;&nbsp; &nbsp;  `  "Price": "100.00",`
-&nbsp; &nbsp;&nbsp; &nbsp;   ` "tags": ["cs", "books","programming"],`
-&nbsp; &nbsp;&nbsp; &nbsp;   ` "createdAt": "2017-08-5T03:22:56.637Z", //will be time stamps`
-&nbsp; &nbsp;&nbsp; &nbsp;  `  "updatedAt": "2017-09-13T03:48:35.824Z",//will be time stamps`
-&nbsp; &nbsp;&nbsp; &nbsp;    `"favorite": false,`
-&nbsp; &nbsp;&nbsp; &nbsp;   ` "favoritesCount": 0,`
-&nbsp; &nbsp;&nbsp; &nbsp;   ` "owner": {`
-&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;    `  "username": "vince",`
-&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;     ` "bio": "CS Student",`
-&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;     ` "image": "some/path",`
-&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;    `  "following": false`
-&nbsp; &nbsp;&nbsp; &nbsp;   ` }`
- `}`
-`}`
+    {
+        "listing": {
+             "slug": "cs-1428-book-#123",
+             "title": CS 1428 book",
+             "description": "1428 text book 5th edition",
+             "category": "Books",
+             "Department?": "CS",//departments might be optional depending on the category.
+             "Price": "100.00",
+             "tags": ["cs", "books","programming"],
+             "createdAt": "2017-08-5T03:22:56.637Z", //will be time stamps
+             "updatedAt": "2017-09-13T03:48:35.824Z",//will be time stamps
+             "favorite": false,
+             "favoritesCount": 0,
+             "owner": {
+              "username": "vince",
+             "bio": "CS Student",
+             "image": "some/path",
+             "following": false
+             }
+         }
+    }
 ### Listings (multiple)
-`{`
-&nbsp; &nbsp;`  "listings":[ {`
-  &nbsp; &nbsp; &nbsp; &nbsp;` "slug": "cs-1428-book-#123",`
-  &nbsp; &nbsp;  &nbsp; &nbsp; `"title": CS 1428 book",`
-  &nbsp; &nbsp; &nbsp; &nbsp;` "description": "1428 text book 5th edition",`
-  &nbsp; &nbsp; &nbsp; &nbsp;`  "category": "Books",`
-  &nbsp; &nbsp;&nbsp; &nbsp;  `  "Department?": "CS",//departments might be optional depending on the category.`
-  &nbsp; &nbsp;&nbsp; &nbsp;  `  "Price": "100.00",`
-  &nbsp; &nbsp; &nbsp; &nbsp; ` "tags": ["cs", "books","programming"],`
-  &nbsp; &nbsp; &nbsp; &nbsp; ` "createdAt": "2017-08-5T03:22:56.637Z", //will be time stamps`
-  &nbsp; &nbsp; &nbsp; &nbsp;`  "updatedAt": "2017-09-13T03:48:35.824Z", //will be time stamps`
-  &nbsp; &nbsp; &nbsp; &nbsp; `"favorite": false,`
- &nbsp; &nbsp; &nbsp; &nbsp; ` "favoritesCount": 0,`
- &nbsp; &nbsp; &nbsp; &nbsp; ` "owner": {`
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  `  "username": "vince",`
-&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  ` "bio": "CS Student",`
-&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  ` "image": "some/path",`
-&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; `  "following": false`
-&nbsp; &nbsp; &nbsp; &nbsp;  ` }`
- `}`
-  `, {`
-&nbsp; &nbsp;  &nbsp; &nbsp; ` "slug": "cs-2308-book-#123",`
-&nbsp; &nbsp; &nbsp; &nbsp;   `"title": CS 2308 book",`
-&nbsp; &nbsp; &nbsp; &nbsp; `  "description": "2308 text book 3red edition",`
-&nbsp; &nbsp;  &nbsp; &nbsp;`  "category": "Books",`
-&nbsp; &nbsp;&nbsp; &nbsp;  `  "Department?": "CS",//departments might be optional depending on the category.`
-&nbsp; &nbsp;&nbsp; &nbsp;  `  "Price": "100.00",`
-&nbsp; &nbsp;  &nbsp; &nbsp; ` "tags": ["cs", "books","programming"],`
-&nbsp; &nbsp;  &nbsp; &nbsp; ` "createdAt": "2017-08-5T03:22:56.637Z", //will be time stamps`
-&nbsp; &nbsp;  &nbsp; &nbsp;`  "updatedAt": "2017-09-13T03:48:35.824Z", //will be time stamps`
-&nbsp; &nbsp;  &nbsp; &nbsp;  `"favorite": false,`
-&nbsp; &nbsp;  &nbsp; &nbsp; ` "favoritesCount": 0,`
-&nbsp; &nbsp;  &nbsp; &nbsp; ` "owner": {`
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  `  "username": "vince",`
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   ` "bio": "CS Student",`
-&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  ` "image": "some/path",`
-&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; `  "following": false`
-&nbsp; &nbsp;  &nbsp; &nbsp; ` }`
- &nbsp; &nbsp;`}],`
-  &nbsp; &nbsp;`"listingCount": 2`
-`}`
+    {
+        "listings":[ {
+            "slug": "cs-1428-book-#123",
+            "title": CS 1428 book",
+            "description": "1428 text book 5th edition",
+            "category": "Books",
+            "Department?": "CS",//departments might be optional depending on the category.
+            "Price": "100.00",
+            "tags": ["cs", "books","programming"],
+            "createdAt": "2017-08-5T03:22:56.637Z", //will be time stamps
+            "updatedAt": "2017-09-13T03:48:35.824Z", //will be time stamps
+            "favorite": false,
+            "favoritesCount": 0,
+            "owner": {
+                "username": "vince",
+                "bio": "CS Student",
+                "image": "some/path",
+                "following": false`
+            }
+        }
+        ,{
+            "slug": "cs-2308-book-#123",
+            "title": CS 2308 book",
+            "description": "2308 text book 5th edition",
+            "category": "Books",
+            "Department?": "CS",//departments might be optional depending on the category.
+            "Price": "100.00",
+            "tags": ["cs", "books","programming"],
+            "createdAt": "2017-08-5T03:22:56.637Z", //will be time stamps
+            "updatedAt": "2017-09-13T03:48:35.824Z", //will be time stamps
+            "favorite": false,
+            "favoritesCount": 0,
+            "owner": {
+                "username": "vince",
+                "bio": "CS Student",
+                "image": "some/path",
+                "following": false`
+            }    
+         }],
+         "listingCount": 2
+    }
 ### Endpoints
 _______________________________________
 #### login
@@ -94,26 +94,28 @@ _______________________________________
 **Returns:** A user.
 **Requires:** `email`, `password`
 **Authentication required:** None.
-`{`
- &nbsp; &nbsp;`  "user":{`
- &nbsp; &nbsp; &nbsp; &nbsp; `   "email": "vince@gmail.com",`
- &nbsp; &nbsp; &nbsp; &nbsp;  `  "password": "blah123"`
- &nbsp; &nbsp; ` }`
-`}`
+
+    {
+        "user":{
+            "email": "vince@gmail.com",
+            "password": "blah123"
+        }
+    }
 
 #### registration
 A `POST` request to the API/users should be made.
 **Returns**: A user.
 **Requires**: `email`, `username` `password`.
 **Authentication required**: None.
-`{`
- &nbsp; &nbsp; `  "user":{`
- &nbsp; &nbsp;  &nbsp; &nbsp; `    "username": "Vicne",`
- &nbsp; &nbsp;  &nbsp; &nbsp; `    "email": "vince@gmail.com",`
- &nbsp; &nbsp;  &nbsp; &nbsp; `    "school-email": "vince@txstate.edu",`
- &nbsp; &nbsp;  &nbsp; &nbsp; `    "password": "blah123"`
- &nbsp; &nbsp; `  }`
-`}`
+###### Example request body:
+    {
+        "user":{
+            "username": "Vicne",`
+            "email": "vince@gmail.com",`
+            "school-email": "vince@txstate.edu",`
+            "password": "blah123"`
+        }
+    }
 
 #### Get Current User
 A `GET` request to the API/user should be made.
@@ -124,14 +126,15 @@ A `PUT` request to the API/user should be made.
 **Authentication required:** Check to make sure user is still logged in.
 **Returns:** The User
 Accepted fields that can be changed: `email`, `username`, `password`, `image`, `bio`
-Example request body:
-`{`
- &nbsp; &nbsp; `  "user":{`
- &nbsp; &nbsp;  &nbsp; &nbsp;  `   "email": "vince@gmail.com",`
- &nbsp; &nbsp;  &nbsp; &nbsp;  `   "bio": "CS student",`
- &nbsp; &nbsp;  &nbsp; &nbsp;  `   "image": "some/path"`
- &nbsp; &nbsp; `  }`
-`}`
+###### Example request body:
+
+    {
+        "user":{
+            "email": "vince@gmail.com",
+            "bio": "CS student",
+            "image": "some/path"
+        }
+    }
 
 
 #### Get Profile
@@ -170,16 +173,16 @@ A `Post` request to the API/listings should be made.
 
 ##### Example request body:
 
-`{`
- &nbsp; &nbsp; `  "listings": {`
- &nbsp; &nbsp; &nbsp; &nbsp; `    "title": "CS 1428 book",`
- &nbsp; &nbsp;  &nbsp; &nbsp; `    "description": "CS 1428 book 5th edition",`
- &nbsp; &nbsp;  &nbsp; &nbsp; `  "category": "book",`
- &nbsp; &nbsp;&nbsp; &nbsp;  `  "Department?": "CS",//departments might be optional depending on the category.`
- &nbsp; &nbsp;&nbsp; &nbsp;  `  "Price": "100.00",`
- &nbsp; &nbsp;  &nbsp; &nbsp; `    "tags": ["1428", "CS"]`
- &nbsp; &nbsp; `  }`
-`}`
+    {
+        "listings": {
+            "title": "CS 1428 book",
+            "description": "CS 1428 book 5th edition",
+            "category": "book",
+            "Department?": "CS",//departments might be optional depending on the category.
+            "Price": "100.00"
+            "tags": ["1428", "CS"]
+        }
+    }
 
 #### Update Listing
 A `PUT` request to the API/listings/:slug should be made.
@@ -190,15 +193,16 @@ A `PUT` request to the API/listings/:slug should be made.
 >**Note:** The slug also gets updated when the title is changed
 
 ##### Example request body:
-`{`
- &nbsp; &nbsp; ` "Listing": {`
- &nbsp; &nbsp;  &nbsp; &nbsp; `"title": "2308 4th edition"`
- &nbsp; &nbsp; `  }`
-`}`
+    {
+        "Listing": {
+            "title": "2308 4th edition"
+        }
+    }
 
 #### Delete Listing
 A `DELETE` request to the API/listings/:slug should be made.
 **Authentication required**: yes needs to be logged in.
+
 
 
 
