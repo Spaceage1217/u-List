@@ -90,7 +90,7 @@ u-List for the students by the students
 ### Endpoints
 _______________________________________
 #### login
- A `POST` request to the API/users/login should be made.
+ A `POST` request to the API/users/login should be made.<br/>
 **Returns:** A user.
 **Requires:** `email`, `password`
 **Authentication required:** None.
