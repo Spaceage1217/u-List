@@ -200,7 +200,7 @@ A `PUT` request to the API/listings/:slug should be made.<br/>
     }
 
 #### Delete Listing
-A `DELETE` request to the API/listings/:slug should be made.
+A `DELETE` request to the API/listings/:slug should be made.<br/>
 **Authentication required**: Yes user needs to be logged in.<br/>
 
 
