@@ -3,15 +3,15 @@ u-List for the students by the students
 
 # API SPEC
 ### Users (to authenticate a user)
-`{`
-&nbsp; &nbsp;  `"user": {`
-&nbsp; &nbsp;&nbsp; &nbsp;    `"email": "vincent@gmail.com",`
-&nbsp; &nbsp;&nbsp; &nbsp;   ` "token": "jwt token or flask token",`
-&nbsp; &nbsp;&nbsp; &nbsp;    `"username": "Vince",`
-&nbsp; &nbsp;&nbsp; &nbsp;    `"bio": "CS Student",`
-&nbsp; &nbsp; &nbsp; &nbsp;   `"image":"some/path"`
-&nbsp; &nbsp;  `}`
-`}`
+    {
+      "user": {
+        "email": "vincent@gmail.com",
+       "token": "jwt token or flask token",
+        "username": "Vince",
+        "bio": "CS Student",
+        "image":"some/path"
+      }
+    }
 ### Profile of a user
 
 `{`
